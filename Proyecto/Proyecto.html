@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Can Estilo</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <a name="anclaInicio"></a> 
+        <div id="buscador">
+            <h1>Bienvenido!</h1>
+            <input class="search" type="text" value placeholder="Buscar productos...">
+            <button class="search">Buscar</button>
+        </div> 
+    </header>
+    <nav>
+        <ul>
+            <li id="registro"><a class="navegacion" href="#anclaInicio" style="text-decoration:none">INICIO</a></li>
+            <li id="nosotros"><a class="navegacion" href="#anclaNosotros" style="text-decoration:none">NOSOTROS</a></li>            
+            <li id="accesorios"><a class="navegacion" href="#anclaAccesorios" style="text-decoration:none">ACCESORIOS</a></li>
+            <li id="agenda"><a class="navegacion" href="#anclaAgenda" style="text-decoration:none">AGENDA</a></li>
+            <li id="comentarios"><a class="navegacion" href="#anclaComentarios" style="text-decoration:none">COMENTARIOS</a></li>
+        </ul>
+    </nav>
+    <main>
+        <a name="anclaNosotros"></a>
+        <div>            
+           <h2 class="main" id="nosotros2">Nosotros</h2> 
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente optio modi voluptatum nisi ea nesciunt harum libero perferendis! Sint dolor minima quos incidunt, illo obcaecati ducimus necessitatibus corporis deserunt doloremque.</p>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci veniam nihil iure tenetur sit nesciunt. Reiciendis alias error, quis cum iure eos facilis molestias dolorem, consequatur nulla accusamus nihil blanditiis.</p>
+           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit voluptatibus quidem ad minima incidunt aspernatur blanditiis sapiente quo hic necessitatibus itaque cum, sint consectetur ab temporibus odio ea debitis ipsum.</p>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente optio modi voluptatum nisi ea nesciunt harum libero perferendis! Sint dolor minima quos incidunt, illo obcaecati ducimus necessitatibus corporis deserunt doloremque.</p>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci veniam nihil iure tenetur sit nesciunt. Reiciendis alias error, quis cum iure eos facilis molestias dolorem, consequatur nulla accusamus nihil blanditiis.</p>
+           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit voluptatibus quidem ad minima incidunt aspernatur blanditiis sapiente quo hic necessitatibus itaque cum, sint consectetur ab temporibus odio ea debitis ipsum.</p>
+           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit voluptatibus quidem ad minima incidunt aspernatur blanditiis sapiente quo hic necessitatibus itaque cum, sint consectetur ab temporibus odio ea debitis ipsum.</p>
+           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati repudiandae ipsa tenetur cumque voluptas facere vero nisi aliquid eum in fuga asperiores quam, aut, nulla a est, ex et mollitia.</p>
+        
+        </div>    
+        <div>
+            <a name="anclaAccesorios"></a>
+            <h2>Accesorios</h2>
+            <div class="accesorios2" id="acces"></div>
+        </div>
+        <div id="reservas">
+            <a name="anclaAgenda"></a>
+            <h2>Agenda</h2>
+            <div>
+                <input type="date">
+                <button>Reservar Baño</button>
+            </div>
+            <div>
+                <input type="date">
+                <button>Reservar Corte</button>
+            </div>
+        </div>
+        <div id="comentarios2">
+            <a name="anclaComentarios"></a>
+            <h2>Comentarios</h2>
+            <div id="info">Agradecemos nos ayudes a mejorar día a día</div>
+            <textarea id="texto" onkeypress="return limita(event, 280);" onkeyup="actualizaInfo(280)" cols= "30" rows="6"></textarea>
+            <button type="submit">Subir comentario</button>
+        </div>
+    </main>
+    <aside>      
+        <form id="logIn" action="">
+            <log-in>Iniciar Sesión</log-in>
+            <div>
+                <input type="email" name="email" id="email" required value placeholder="E-Mail">
+                <input type="password" name="password" id="password" value placeholder="Contraseña">
+                <button>Ingresar</button>
+            </div>
+            
+        </form>
+    </aside>
+    <footer>        
+        <li><img src="./Logo Can Estilo.jpg" alt="Logo"></li>
+        <li class="foot">Tel:091123123</li>
+        <li class="foot"><a href="https://www.instagram.com/" class="foot">@canestilopocitos</a></li>
+        <li class="foot">®Can Estilo</li>        
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
