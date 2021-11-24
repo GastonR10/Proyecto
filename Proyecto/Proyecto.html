@@ -60,17 +60,17 @@
             <a name="anclaComentarios"></a>
             <h2>Comentarios</h2>
             <div id="info">Agradecemos nos ayudes a mejorar día a día</div>
-            <textarea id="texto" onkeypress="return limita(event, 280);" onkeyup="actualizaInfo(280)" cols= "30" rows="6"></textarea>
-            <button type="submit">Subir comentario</button>
+            <textarea id="text" onkeypress="return limita(event, 280);" onkeyup="actualizaInfo(280)" cols= "30" rows="6"></textarea>
+            <button id="submitComment" type="submit">Subir comentario</button>
         </div>
     </main>
     <aside>      
-        <form id="logIn" action="">
+        <form >
             <log-in>Iniciar Sesión</log-in>
-            <div>
-                <input type="email" name="email" id="email" required value placeholder="E-Mail">
+            <div method="POST" action="javascript:void(0);">
+                <input type="email" name="email" id="mail" required value placeholder="E-Mail">
                 <input type="password" name="password" id="password" value placeholder="Contraseña">
-                <button>Ingresar</button>
+                <button id="login">Ingresar</button>
             </div>
             
         </form>
