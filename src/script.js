@@ -93,41 +93,41 @@ const productos = [
 /* cuadro de comentarios */
 
 function limita(elEvento, maximoCaracteres) {
-    let elemento = document.getElementById("texto");
+  let elemento = document.getElementById("text");
 
-    let evento = elEvento;
+  let evento = elEvento;
 
-    if(elemento.value.length >= maximoCaracteres) {
-        return false;
-    } else {
-        return true;
-    }
+  if(elemento.value.length >= maximoCaracteres) {
+      return false;
+  } else {
+      return true;
+  }
 }
 
 const actualizaInfo = (maximoCaracteres) => {
-    let elemento = document.getElementById("texto")
-    let info = document.getElementById("info")
+  let elemento = document.getElementById("text")
+  let info = document.getElementById("info")
 
-    if (elemento.value.length >= maximoCaracteres){
-        info.textContent = "Agradecemos nos ayudes a mejorar día a día";
-    } else {
-        const difMax = maximoCaracteres - elemento.value.length
-        info.textContent = `Te quedan ${difMax} caracteres` 
-    }
+  if (elemento.value.length >= maximoCaracteres){
+      info.textContent = "Agradecemos nos ayudes a mejorar día a día";
+  } else {
+      const difMax = maximoCaracteres - elemento.value.length
+      info.textContent = `Te quedan ${difMax} caracteres` 
+  }
 
 }
 
-// const button = document.getElementById("submitComment");
+// const buttonComment = document.getElementById("submitComment");
 
 // const commentElement = document.getElementById("text");
 
-// button.addEventListener("click", ()=> {
+// buttonComment.addEventListener("click", ()=> {
 //   const comment = commentElement.value;
 // })
 
 // const newComment = { comment: comment };
 
-// fetch("", {
+// fetch("http://localhost:3000/comments", {
 //   method: "POST",
 
 //   body: JSON.stringify(newComment),
@@ -180,5 +180,6 @@ button.addEventListener("click", () => {
     alert("Falta completar campos");
   }
 });
+
 
 
